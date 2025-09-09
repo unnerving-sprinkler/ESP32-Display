@@ -3,6 +3,7 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+#include <UrlEncode.h>
 
 //VARS
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
@@ -53,8 +54,6 @@ void loop() {
   testscrolltext();    // Draw scrolling text
 }
 
-
-
 void testscrolltext(void) {
   display.clearDisplay();
   display.setTextSize(2); // Draw 2X-scale text
@@ -64,7 +63,6 @@ void testscrolltext(void) {
   display.setTextSize(3); // Draw 3X-scale text
   display.println(F("88F 57%"));
   display.display();   // Show initial text
-
 }
 
   
