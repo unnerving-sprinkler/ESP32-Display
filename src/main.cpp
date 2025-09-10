@@ -4,6 +4,9 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <UrlEncode.h>
+#include <WiFi.h>
+#include <HTTPClient.h>
+#include <ArduinoJson.h>
 
 //VARS
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
@@ -14,6 +17,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 //Functions
 void testscrolltext(void);
 
+
+//////////////////////////////////////////////////////////////
 //Logo bitmap
 #define LOGO_HEIGHT   16
 #define LOGO_WIDTH    16
@@ -47,6 +52,12 @@ void setup() {
   display.display();
   delay(250); // Pause for 2 seconds
   display.clearDisplay();
+
+
+
+
+
+
 }
 
 void loop() {
