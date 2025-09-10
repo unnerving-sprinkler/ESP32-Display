@@ -1,12 +1,9 @@
+//Includes
 #include <Arduino.h>
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-#include <UrlEncode.h>
-#include <WiFi.h>
-#include <HTTPClient.h>
-#include <ArduinoJson.h>
 
 //VARS
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
